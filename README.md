@@ -1,5 +1,6 @@
 # GMapping with CARLA
 A collection of scripts to use the output of a Lidar sensor from the CARLA simulator with the ROS gmapping package.
+Radar sensor support is currently under development.
 ## Instructions
  - Clone https://github.com/hiwad-aziz/carla_ros_control_ego and follow steps 1-4 from the repository's instructions.
  - Install the dependencies in the running docker image:

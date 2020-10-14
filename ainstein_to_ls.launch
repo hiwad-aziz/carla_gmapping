@@ -1,0 +1,14 @@
+<launch>
+  <node name="radar_to_scan" pkg="ainstein_radar_filters" type="radar_target_array_to_laser_scan_node" >
+      <remap from="radar_in" to="/carla/ego_vehicle/radar/default/radar" />
+      <remap from="~scan_out" to="/laser_scan" />
+      <rosparam>
+        angle_min: -1.5707
+        angle_max: 1.5707
+        angle_increment: 0.0175
+        scan_time: 0.1
+        range_min: 1
+        range_max: 40.0
+      </rosparam>
+  </node>
+</launch>
