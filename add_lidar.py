@@ -1,4 +1,3 @@
-import rospy
 import carla
 from carla_msgs.msg import CarlaEgoVehicleInfo
 
