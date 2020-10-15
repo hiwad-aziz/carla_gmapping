@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
   # add lidar sensor to 'ego_vehicle'
   rad_bp = world.get_blueprint_library().find('sensor.other.radar')
-  rad_bp.set_attribute('horizontal_fov', str(45))
+  rad_bp.set_attribute('horizontal_fov', str(90))
   rad_bp.set_attribute('vertical_fov', str(20))
   rad_bp.set_attribute('range', str(50))
   rad_bp.set_attribute('points_per_second', str(1500))
